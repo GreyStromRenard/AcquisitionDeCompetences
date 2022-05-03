@@ -2,7 +2,7 @@
     <html>
         <head>
             <meta charset="utf-8"/>
-            <title>Ma page web</title>
+            <title>La page web de <?php echo "Mathys"; ?> </title>
         </head>
         <body>
             <h1>Ma page web</h1>
@@ -10,7 +10,7 @@
             <p>
                 Bonjour Mathys !<br />
                 Cette page contient du code HTML avec des balises PHP.<br />
-                <?php ?>
+                Nous sommes le <?php echo date('d/m/y h:i:s'); ?>
                 Voici quelques petits tests :
             </p>
 
@@ -19,5 +19,8 @@
                 <li style="color: red;">Texte en rouge</li>
                 <li style="color: green;">Texte en vert</li>
             </ul>
+
+            <?php echo "Merci le <strong>\"PHP\"</strong>"; //Sympa le PHP?>
+
         </body>
     </html>
