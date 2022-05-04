@@ -73,5 +73,3 @@ switch ($grade) {
 $userAge = 18;
 
 $isAdult = ($userAge >= 18);
-
-?>
