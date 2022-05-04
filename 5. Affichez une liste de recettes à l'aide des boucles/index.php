@@ -7,11 +7,22 @@ $mathys = ['Mathys Wagner', 'mathys.wagner@exmple.com', 'jU1', 18];
 
 $users = [$mickael, $mathieu, $laurene, $mathys];
 
-echo $users[1][1];
+echo $users[3][1] . '<br>';
 
-$lines = 1;
+$lines = 4;
+$counter = 0;
 
-while ($lines <= 100) {
-    echo "Je ne suis pas très beau mais quand même.";
-    $lines++;
+while ($counter < $lines) {
+    echo $users[$counter][0] . ' ' . $users[$counter][1] . '<br>';
+    $counter++;
 }
+
+echo '<br>';
+
+for ($lines = 0; $lines <= 3; $lines++) {
+    echo $users[$lines][0] . ' ' . $users[$lines][1] . '<br>';
+}
+
+?>
+
+<a href="page.php">Affichez des recettes (suite)</a>
