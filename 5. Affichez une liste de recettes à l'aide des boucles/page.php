@@ -12,6 +12,7 @@ $recipes = [
 <head>
     <meta charset="UTF-8">
     <title>Affichage des recettes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <h1>Affichage des recettes</h1>
