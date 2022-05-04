@@ -23,6 +23,9 @@ for ($lines = 0; $lines <= 3; $lines++) {
     echo $users[$lines][0] . ' ' . $users[$lines][1] . '<br>';
 }
 
+echo '<br><br>';
+
+
 ?>
 
 <a href="page.php">Affichez des recettes (suite)</a>
