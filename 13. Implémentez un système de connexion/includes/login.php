@@ -1,5 +1,7 @@
 <?php
 
+include_once('variable.php');
+
 if (isset($_POST['email']) && isset($_POST['password'])) {
     foreach ($users as $user) {
         if (
@@ -12,7 +14,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
         } else {
             $errorMessage = sprintf('Identifiants inconnus : (%s/%s)',
             $_POST['email'],
-            $_POST['password']            
+            $_POST['password']          
             );
         }
     }
@@ -21,7 +23,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 ?>
 
 <?php if(!isset($loggedUser)): ?>
-<form action="home.php" method="post">
+<form action="index.php" method="POST">
 
     <?php if(isset($errorMessage)) : ?>
         <div class="alert alert-danger" role="alert">

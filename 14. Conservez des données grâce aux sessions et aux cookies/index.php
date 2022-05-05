@@ -18,8 +18,8 @@ include_once('includes/functions.php');
 
     <div class="container">
         <h1>Site de recettes</h1>
-        
-        <?php include_once('includes/login.php') ?>
+
+        <?php include_once('includes/login.php'); ?>
 
         <?php if (isset($loggedUser)): ?>
             <?php foreach(getRecipes($recipes) as $recipe) : ?>
@@ -32,7 +32,6 @@ include_once('includes/functions.php');
         <?php endif; ?>
     </div>
 
-    <!-- inclusion du bas de page du site -->
     <?php include_once('includes/footer.php'); ?>
 </body>
 </html>
