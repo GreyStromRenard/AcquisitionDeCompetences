@@ -7,6 +7,8 @@ catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
 
+// Toutes les codes MySQL ont été testé sur phpMyAdmin
+
 $query = 'SELECT u.full_name, c.comment
 FROM users u
 INNER JOIN comments c
