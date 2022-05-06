@@ -3,6 +3,22 @@
 include_once('includes/variable.php');
 include_once('includes/functions.php');
 
+session_start();
+        
+if (isset($_POST['email'])) {
+    $value = $_POST['email'];
+}
+
+setcookie(
+    'LOGGED_USER',
+    $value,
+    [
+        'expires' => time() + 365*24*3600,
+        'secure' => true,
+        'httponly' => true,
+    ]
+);
+
 ?>
 <!DOCTYPE html>
 <html>
