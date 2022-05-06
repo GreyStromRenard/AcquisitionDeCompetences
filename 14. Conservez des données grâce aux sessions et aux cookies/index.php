@@ -17,17 +17,7 @@ if(isset($_POST['email'])) {
             'httponly' => true,
         ]
     );
-    
-    $_POST['email'] = $_COOKIE['LOGGED_USER'];
 }
-
-// if (!isset($loggedUser)) {
-//     foreach ($users as $user) {
-//         $loggedUser = [
-//             'email' => $_POST['email']
-//         ];
-//     }
-// }
 
 ?>
 <!DOCTYPE html>
